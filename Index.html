@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+const surname = 'Карамзин  ';
+const name = 'Виктор';
+const patronymic = 'Геннадьевич';
+const ocupation = 'Преподаватель спец. дисциплин';
+const degree = 'Высшее';
+const category = 'Первая';
+const education = 'МГТУ(Тех университет)';
+const discipline = 'Информатика';
+const note = 'Шаврардалгормандырктар';
+
+let Vivo= [
+    'Карамзин Виктор Геннадьевич',
+    'Преподаватель спец. дисциплин',
+    'Высшее',
+    'Первая',
+    'МГТУ(Тех университет)',
+    'Информатика',
+    'Шаврардалгормандырктар'
+]
+
+let Vivo2 = {
+    FIO:'Карамзин Виктор Геннадьевич',
+    Ocup:'Преподаватель спец. дисциплин',
+    deg:'Высшее',
+    cat:'Первая',
+    educat:'МГТУ(Тех университет)',
+    discip:'Информатика',
+    Random:'Шаврардалгормандырктар'
+}
+
+let Vivo3 = {
+    FIO:'Карамзин Виктор Геннадьевич',
+    Ocup:'Преподаватель спец. дисциплин',
+    deg:'Высшее',
+    cat:'Первая',
+    educat:'МГТУ(Тех университет)',
+    discip:'Информатика',
+    Random:'Шаврардалгормандырктар'
+}
+let Vova=`
+    <h2>${Vivo3.FIO}</h2>
+    <p>Должность:${Vivo3.Ocup}</p>
+    <p>Уровень образования:${Vivo3.deg}</p>
+    <p>Категория:${Vivo3.cat}</p>
+    <p>Образование:${Vivo3.educat}</p>
+    <p>Дисциплина:${Vivo3.discip}</p>
+    <p>Рандомная фигня:${Vivo3.Random}</p>
+`;
+
+let Vivo4 = {
+    FIO:'Карамзин Виктор Геннадьевич',
+    Ocup:'Преподаватель спец. дисциплин',
+    deg:'Высшее',
+    cat:'Первая',
+    educat:[
+        'МГТУ(Тех университет)',
+        'Школа какая-то №Х3'],
+    discip:
+    ['Информатика',
+    'Как правильно готовить кальмара'],
+    Random:'Шаврардалгормандырктар'
+}
+let Vova2=`
+    <h2>${Vivo4.FIO}</h2>
+    <p>Должность:${Vivo4.Ocup}</p>
+    <p>Уровень образования:${Vivo4.deg}</p>
+    <p>Категория:${Vivo4.cat}</p>
+    <p>Образование:${Vivo4.educat[0]}
+        <p>${Vivo4.educat[1]}</p>
+        </p>
+    <p>Дисциплина:
+        <ul>
+            <li>${Vivo4.discip[0]}</li>
+             <li>${Vivo4.discip[1]}</li>
+        </ul>
+        </p>
+    <p>Рандомная фигня:${Vivo4.Random}</p>
+`;
+    </script>
+</head>
+<body>
+<!-- <h1>Зимнее утро</h1>
+    <h3>Александр Сергеевич Пушкин</h3>-->
+    <script src="js.js"></script>
+    
+        <div class="cont">
+            <h1>1.8</h1><br>
+            <script>
+                document.write('<h4>'+ surname+''+name +''+ patronymic,'</h2><br>');
+            document.write('Должность: ' + ocupation + '<br>');
+            document.write('Уровень образования: ' + degree  + '<br>');
+            document.write('Категория: ' + category  + '<br>');
+            document.write('Образование: ' + education  + '<br>');
+            document.write('Дисциплина: ' + discipline  + '<br>');
+            document.write('Рандомная фигня: ' + note  + '<br>');
+        </script>
+        </div>
+
+        <div class="cont">
+            <br><h1>1.9--------</h1><br>
+            <script>
+            document.write('<h4>'+ Vivo[0]+ '</h2><br>');
+            document.write('Должность: ' + Vivo[1] + '<br>');
+            document.write('Уровень образования: ' + Vivo[2]  + '<br>');
+            document.write('Категория: ' + Vivo[3]  + '<br>');
+            document.write('Образование: ' + Vivo[4]  + '<br>');
+            document.write('Дисциплина: ' + Vivo[5]  + '<br>');
+            document.write('Рандомная фигня: ' + Vivo[6]  + '<br>');
+</script>
+        </div>
+        <div class="cont">
+            <br><h1>1.10---------</h1><br>
+            <script>
+            document.write('<h4>'+ Vivo2.FIO + '</h2><br>');
+            document.write('Должность: ' +Vivo2.Ocup + '</h2><br>');
+            document.write('Уровень образования: '+Vivo2.deg + '</h2><br>');
+            document.write('Категория: '+Vivo2.cat + '</h2><br>');
+            document.write('Образование: '+Vivo2.educat + '</h2><br>');
+            document.write('Дисциплина: '+Vivo2.discip+ '</h2><br>');
+            document.write('Рандомная фигня: '+Vivo2.Random+ '</h2><br>');
+ </script>
+           </div>
+           <div class="cont">
+            <br><h1>1.11---------</h1><br>
+            <script>
+            document.write(Vova);
+            </script>
+            </div>
+            <div class="cont">
+                <br><h1>1.12---------</h1><br>
+                <script>
+                document.write(Vova2);
+                </script>
+                </div>
+   
+</body>
+</html>
